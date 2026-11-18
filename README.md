@@ -35,7 +35,6 @@ pizza-delivery-api/
 └── README.md
 Database Design
 Users Table
-Column
 id
 username
 email
@@ -43,7 +42,6 @@ password
 is_staff
 is_active
 Orders Table
-Column
 id
 quantity
 order_status
@@ -93,8 +91,7 @@ http://127.0.0.1:8000/docs
 Current Status
 Project currently under development.
 
-Planned Features:
-
+Planned Features
 User Login
 JWT Authentication
 Create Order API
