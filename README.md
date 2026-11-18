@@ -22,9 +22,10 @@ Pydantic
 pgAdmin 4
 Git
 GitHub
+
 Project Structure
+
 pizza-delivery-api/
-│
 ├── auth_routes.py
 ├── order_routes.py
 ├── database.py
@@ -34,6 +35,7 @@ pizza-delivery-api/
 ├── create_tables.py
 ├── main.py
 └── README.md
+
 Database Design
 Users Table
 id
