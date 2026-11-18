@@ -79,6 +79,7 @@ ChoiceType
 Database Sessions
 Pydantic Schemas
 Git and GitHub
+
 How to Run
 Activate virtual environment:
 
@@ -89,6 +90,7 @@ uvicorn main:app --reload
 Open Swagger Documentation:
 
 http://127.0.0.1:8000/docs
+
 Current Status
 Project currently under development.
 
@@ -99,6 +101,7 @@ Create Order API
 Update Order API
 Delete Order API
 Order Tracking
+
 Author
 Upasona Mukherjee
 
