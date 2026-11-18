@@ -12,7 +12,6 @@ PostgreSQL Integration
 ORM Relationships
 Password Hashing
 CRUD Operations
-
 Tech Stack
 Python
 FastAPI
@@ -22,7 +21,6 @@ Pydantic
 pgAdmin 4
 Git
 GitHub
-
 Project Structure
 pizza-delivery-api/
 │
@@ -82,7 +80,6 @@ ChoiceType
 Database Sessions
 Pydantic Schemas
 Git and GitHub
-
 How to Run
 Activate virtual environment:
 
