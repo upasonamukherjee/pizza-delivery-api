@@ -1,9 +1,16 @@
+import os
+
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "postgresql+psycopg2://postgres:postgres%40123@localhost:5432/pizza_delivery"
+load_dotenv()
 
-engine = create_engine(DATABASE_URL, echo=True)
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL is not set. Add it to your .env file.")
+
+engine = create_engine(DATABASE_URL, echo=False)
 
 SessionLocal = sessionmaker(
     autocommit=False,
@@ -12,6 +19,7 @@ SessionLocal = sessionmaker(
 )
 
 Base = declarative_base()
+
 
 def get_db():
     db = SessionLocal()
